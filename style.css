@@ -1,0 +1,100 @@
+/* top-banner design  */
+.top-banner{
+    width: 100%;
+    background: url('https://deterylightmode.netlify.app/static/media/Banner.639c4fdafdd800760cb8.png') no-repeat center ;
+    background-size: cover;
+    padding: 14.875rem 0 9.375rem;
+}
+  /* top-banner design  */
+  nav{
+    background-color: rgb(227, 226, 226);
+  }
+  .pro{
+    padding: 2% 3%;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  .four {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .six {
+    grid-column: 3;
+    grid-row: 2/5;
+  }
+  .container-i {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    
+  }
+  .box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  .colorbox:hover {
+    background-color: rgb(86, 211, 124);
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .one, .two, .three, .four, .five, .six {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .top-banner{
+        background: url('https://deterylightmode.netlify.app/static/media/Banner.639c4fdafdd800760cb8.png') no-repeat center;
+        background-size: cover;
+        padding: 19% 0; /* Use percentage for padding */
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+  }
+
+
+.myElement {
+  background-color: #3498db; /* Default background color */
+  color: #fff; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect for color changes */
+}
+
+/* Apply styles on hover */
+.myElement:hover {
+  background-color: #2980b9; /* Hover background color */
+  color: #000; /* Hover text color */
+}
